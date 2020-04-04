@@ -5,11 +5,14 @@
 1. Run jenkins
 
     ```
-    docker run -p 8080:8080 -p 50000:50000 -v ${PWD}/jenkins_home:/var/jenkins_home jenkins/jenkins
+    docker-compose up
     ```
 
-1. New item for your repo
+1. New item for your repo with `Pipeline`
 
     - Create item
     - Set up the credentials using `deploy key` in case of github repo
 
+1. Add `Jenkinsfile` in your repo
+
+    https://jenkins.io/doc/book/pipeline/docker/
